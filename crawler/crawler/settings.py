@@ -25,7 +25,7 @@ SECRET_KEY = '+oevwnhhk_-)#-_^y@u7!d9g=rqs3b!+mmoajcmr@12+jxlw1z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['crawler-gale.herokuapp.com']
 
 
 # Application definition
