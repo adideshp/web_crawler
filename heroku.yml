@@ -3,4 +3,4 @@ build:
     web: gale_project/Dockerfile
 
 run:
-  web: gunicorn --chdir gale-project gale-project.wsgi:application 
+  web: gunicorn --chdir gale_project gale_project.wsgi:application 
