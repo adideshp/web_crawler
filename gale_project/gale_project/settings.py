@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'api'
+    
 ]
 
 MIDDLEWARE = [
@@ -91,6 +94,14 @@ CELERY = {
     'CELERY_TASK_SERIALIZER': 'json',
     'CELERY_RESULT_SERIALIZER': 'json',
     'CELERY_ACCEPT_CONTENT': ['json'],
+}
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    )
 }
 
 
