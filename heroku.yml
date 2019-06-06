@@ -3,4 +3,4 @@ build:
     web: crawler/Dockerfile
 
 run:
-  web: gunicorn --chdir crawler crawler.wsgi:application 
+  web: gunicorn --chdir gale-project gale-project.wsgi:application 

@@ -1,3 +1,0 @@
-POSTGRES_USER=admin_role
-POSTGRES_PASSWORD=admin_password
-POSTGRES_DB=crawlerdb
