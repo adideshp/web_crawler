@@ -6,7 +6,7 @@ from .models import Job, ImageUrl, Page, Result, LeafResult, IntermediateResult
 class JobSerializer(serializers.ModelSerializer):
     class Meta:
         model = Job
-        fields = ('_id', 'seed_url', 'depth', 'status', 'result', 'created_at')
+        fields = ('_id', 'seed_url', 'depth', 'status', 'solution', 'created_at')
         depth=2
 
 

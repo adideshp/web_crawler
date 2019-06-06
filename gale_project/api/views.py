@@ -51,5 +51,5 @@ class ImageViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
     """
-    queryset = Image.objects.all().order_by('-created_at')
+    queryset = ImageUrl.objects.all().order_by('-created_at')
     serializer_class = ImageSerializer

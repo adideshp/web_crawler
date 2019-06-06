@@ -6,7 +6,7 @@ RUN mkdir -p /opt/services/djangoapp/src
 WORKDIR /opt/services/djangoapp/src
 
 # install our two dependencies
-RUN pip install gunicorn django psycopg2 celery beautifulsoup4 djangorestframework
+RUN pip install gunicorn django psycopg2 celery beautifulsoup4 djangorestframework requests
 
 # copy our project code
 COPY . /opt/services/djangoapp/src
